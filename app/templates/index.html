@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recognition</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Draw a Digit</h1>
+    <canvas id="drawCanvas" width="280" height="280"></canvas>
+    <button id="clearCanvas">Clear</button>
+    <h2>Prediction: <span id="prediction">?</span></h2>
+    <div>
+        <canvas id="prediction-chart"></canvas>
+    </div>
+    <footer>
+        <p>Made for learning purposes - visualize and recognize digits in real-time!</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>

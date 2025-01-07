@@ -1,0 +1,35 @@
+{
+    "name": "Digit Recognition",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "editor.formatOnSave": true
+            },
+            "extensions": [
+                "ms-python.black-formatter",
+                "ms-python.flake8",
+                "ms-python.isort",
+                "ms-python.vscode-pylance",
+                "njpwerner.autodocstring",
+                "shardulm94.trailing-spaces",
+                "shd101wyy.markdown-preview-enhanced",
+                "oderwat.indent-rainbow",
+                "GitHub.Copilot",
+                "GitHub.copilot-chat",
+                "DanielSanMedium.dscodegpt",
+                "christian-kohler.path-intellisense",
+                "esbenp.prettier-vscode",
+                "DavidAnson.vscode-markdownlint",
+                "ms-python.autopep8",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    "forwardPorts": [5000],
+    "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
+    "remoteUser": "vscode"
+}
